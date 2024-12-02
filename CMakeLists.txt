@@ -1,0 +1,7 @@
+set(SOURCE_FILES aoc24.c aocutil.c aocstack.c day01.c day02.c)
+cmake_minimum_required(VERSION 3.23)
+project(aoc_2024 C)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build )
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+set(CMAKE_C_STANDARD 11)
+add_executable(aoc ${SOURCE_FILES})
